@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Zero.Page3"
+             Title="Page3">
+    <ContentPage.Content>
+        
+            <Grid RowSpacing="1" ColumnSpacing="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!--linha0-->
+                <BoxView BackgroundColor="DarkGreen"
+                     Grid.Row="0"
+                     Grid.ColumnSpan="2"/>
+                <Label Text="Zero - Project"
+                   FontSize="Title"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+                <!--linha1-->
+                <BoxView BackgroundColor="Black"
+                     Grid.Row="1"
+                     Grid.ColumnSpan="2"/>
+            <ScrollView VerticalScrollBarVisibility="Default"
+                        Grid.Row="1"
+                     Grid.ColumnSpan="2">
+                <Label Text="Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma galé do tipo e embaralhou para fazer um livro de amostra de tipos. Ele sobreviveu não apenas cinco séculos, mas também ao salto para a composição eletrônica, permanecendo essencialmente inalterado. Ele foi popularizado na década de 1960 com o lançamento de folhas de Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker incluindo versões de Lorem Ipsum.Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma galé do tipo e embaralhou para fazer um livro de amostra de tipos. Ele sobreviveu não apenas cinco séculos, mas também ao salto para a composição eletrônica, permanecendo essencialmente inalterado. Ele foi popularizado na década de 1960 com o lançamento de folhas de Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker incluindo versões de Lorem Ipsum.Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma galé do tipo e embaralhou para fazer um livro de amostra de tipos. Ele sobreviveu não apenas cinco séculos, mas também ao salto para a composição eletrônica, permanecendo essencialmente inalterado. Ele foi popularizado na década de 1960 com o lançamento de folhas de Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker incluindo versões de Lorem Ipsum."
+                   FontSize="Body"
+                   TextColor="WhiteSmoke"
+                   Padding="25"
+                   HorizontalTextAlignment="Start"
+                   Grid.Row="1"
+                     Grid.ColumnSpan="2"
+                   />
+            </ScrollView>
+            <!--linha2-->
+                <BoxView BackgroundColor="Black"
+                     Grid.Row="2"
+                     Grid.Column="0"/>
+                <Image Source="cardProd10"
+                       Aspect="AspectFit"
+                       Grid.Row="2"
+                     Grid.Column="0"/>
+
+                <BoxView BackgroundColor="DarkGreen"
+                     Grid.Row="2"
+                     Grid.Column="1"/>
+
+                <ImageButton Source="cardProd11"
+                     BackgroundColor="DarkGreen"
+                       Grid.Row="2"
+                     Grid.Column="1"/>
+                <!--linha3-->
+                <BoxView BackgroundColor="DarkGreen"
+                     Grid.Row="3"
+                     Grid.Column="0"/>
+
+                <BoxView BackgroundColor="Black"
+                     Grid.Row="3"
+                     Grid.ColumnSpan="2"/>
+                <Label Text="ZERO - Project Copyright © 2061" 
+                   TextColor="WhiteSmoke" 
+                   FontSize="10"
+                   FontAttributes="None"
+                   Grid.Row="3"
+                     Grid.ColumnSpan="2"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            </Grid>
+       
+
+    </ContentPage.Content>
+</ContentPage>

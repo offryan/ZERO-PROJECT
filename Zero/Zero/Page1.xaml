@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Zero.Page1"
+             Title="Page1">
+    <ContentPage.Content>
+        <Grid BackgroundColor="DarkRed" Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--elementos-->
+            <!--linha1-->
+            <BoxView BackgroundColor="Black" Grid.Row="0"
+                   Grid.ColumnSpan="2"/>
+            <Label Text="ZERO - Page 1" 
+                   TextColor="WhiteSmoke" 
+                   FontSize="40"
+                   FontAttributes="None"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <!--linha2-->
+            <BoxView BackgroundColor="Black" Grid.Row="1" Grid.ColumnSpan="2"/>
+
+            <Image Source="cardProd1" Aspect="AspectFit" Grid.Row="1" Grid.ColumnSpan="2"/>
+
+            <!--linha3-->
+            <BoxView BackgroundColor="Black" Grid.Row="2" Grid.Column="0" />
+            <Image Source="cardProd2" Aspect="AspectFit" Grid.Row="2" Grid.Column="0"/>
+
+            <BoxView BackgroundColor="Black" Grid.Row="2" Grid.Column="1" />
+            <Label Text="ZERO - Description" 
+                   TextColor="WhiteSmoke" 
+                   FontSize="15"
+                   FontAttributes="None"
+                   Grid.Row="2"
+                   Grid.ColumnSpan="2"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <!--linha4-->
+            <BoxView BackgroundColor="Black" Grid.Row="3" Grid.Column="0" />
+            <Image Source="cardProd3" Aspect="AspectFit" Grid.Row="3" Grid.Column="0"/>
+
+            <BoxView BackgroundColor="Black" Grid.Row="3" Grid.Column="1" />
+            <Label Text="ZERO - Description" 
+                   TextColor="WhiteSmoke" 
+                   FontSize="15"
+                   FontAttributes="None"
+                   Grid.Row="3"
+                   Grid.ColumnSpan="2"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <!--linha5-->
+            <BoxView BackgroundColor="Black" Grid.Row="4" Grid.Column="0" />
+            <Image Source="cardProd5" Aspect="AspectFit" Grid.Row="4" Grid.Column="0"/>
+
+            <BoxView BackgroundColor="Black" Grid.Row="4" Grid.Column="1" />
+            <Label Text="ZERO - Description" 
+                   TextColor="WhiteSmoke" 
+                   FontSize="15"
+                   FontAttributes="None"
+                   Grid.Row="4"
+                   Grid.ColumnSpan="2"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <!--linha6-->
+            <BoxView BackgroundColor="Black" Grid.Row="5"
+                   Grid.ColumnSpan="2"/>
+            <Label Text="ZERO - Project Copyright © 2061" 
+                   TextColor="WhiteSmoke" 
+                   FontSize="10"
+                   FontAttributes="None"
+                   Grid.Row="5"
+                   Grid.ColumnSpan="2"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
